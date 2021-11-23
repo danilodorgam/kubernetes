@@ -1,6 +1,7 @@
 #Kubernetes
 
 #history da aula 1
+```bash
 sudo apt-get update
 echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
@@ -29,3 +30,4 @@ kubectl expose deployment hello-minikube --type=NodePort --8080
 kubectl expose deployment hello-minikube --type=NodePort --port=8080
 kubeclt get services hellow-minikube
 kubectl get services hello-minikube
+```

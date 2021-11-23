@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: docker-hub-privado
+spec:
+  containers:
+    - name: docker-hub-privado-container
+      image: dhdorgam/meu-nodejs:stable
+      imagePullPolicy: IfNotPresent
+  imagePullSecrets:
+    - name: hubprivado
